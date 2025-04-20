@@ -108,7 +108,29 @@ import java.math.BigInteger
 //    println("$a^$exponent ≈ $power") // Приблизительное значение из-за ограничений Double
 //}
 
-// TODO: Null-safety
+// TODO: Null-safety ? !!
+/*
+Это ситуация, когда мы обращаемся к какому-то полю (объекту класса) который
+при этом имеет значение null и таким образом, мы можем попытаться вызвать у него
+какой-то метод у объекта этого класса, но из-за того что он null приложение вылитит.
+По этому есть переменные которые могут быть null а есть которые не могут.
+ */
+//fun main() {
+//    val greeting: String  // переменная string точно не будет null
+//    val greetingNull: String?  // переменная может быть null или нет.
+//
+//    // В одну строку
+//    //println("Enter yuor greeting: ${readlnOrNull().also { greetingNull = it }}")
+//
+//    println("Введите что-то: ")
+//    greetingNull = readLine()
+//
+//
+//    // Размер строки
+//    println("Длина строки: ${greetingNull?.length}") // !! вместо ? лучше не ставить!
+//}
+
+// TODO: Оператор if и продолжение Null-Safety
 fun main() {
-    
+
 }
