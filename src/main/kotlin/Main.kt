@@ -131,6 +131,41 @@ import java.math.BigInteger
 //}
 
 // TODO: Оператор if и продолжение Null-Safety
+//fun main() {
+//    val greetingNull: String?
+//
+//    println("Введите что-то, или оставьте строку пустой: ")
+//    greetingNull = readLine()
+//
+//    if (greetingNull?.isEmpty() == true) {
+//        println("Строка пустая!")
+//
+//    } else if (greetingNull == "Hello World!") {
+//        println("В строке присутствует: ${greetingNull}")
+//
+//    } else if (greetingNull == "yy") {
+//        println("В строке присутствует: ${greetingNull}")
+//
+//    } else {
+//        println("Строка не пустая, вот её размер:")
+//    }
+//
+//    println("Длина строки: ${greetingNull?.length}")
+//}
+
+// TODO: Оператор элвейс - ?:
+//fun main() {
+//    // Отрабатывается когда переменная null
+//    val greNull: String
+//    greNull = readLine()?: "Эта надпись появилась, т.к. ничего не ввели!"
+//    println("Тут выводится то, что ввели или не ввели выше! ${greNull}")
+
+//    val greNull: String
+//    greNull = readLine().toString()
+//    println("Тут выводится то, что ввели или не ввели выше! ${greNull}")
+//}
+
+// TODO: Условный оператор when
 fun main() {
 
 }
