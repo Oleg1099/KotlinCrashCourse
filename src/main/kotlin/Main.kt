@@ -168,4 +168,31 @@ import java.math.BigInteger
 // TODO: Условный оператор when
 fun main() {
 
+    println("Введите день недели на англ-яз: ")
+    val day = readlnOrNull() ?: "Mondey"
+    val dayNun: Int
+
+    when (day) {
+        "Mondey" -> {
+            dayNun = 1
+        }
+        "Tuesday" -> {
+            dayNun = 2
+        }
+        "Wednesday" -> {
+            dayNun = 3
+        }
+        "Thursday" -> {
+            dayNun = 4
+        }
+        "Friday" -> {
+            dayNun = 5
+        } else -> {
+            dayNun = -1
+        }
+    }
+    if (dayNun == -1) {
+        println("Нерабочий день недели, выходной!")
+    }
+    println("День недели: ${dayNun}")
 }
